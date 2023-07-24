@@ -1,10 +1,10 @@
 # CartX
 - *This is a E-Commerce website built using **ReactJS**, **TailwindCSS**, **NodeJS** and **MySQL**.*
-- *Added Cart, Personal Profile, Product Review and My Orders features*
-- *You are most welcome to give me your feedbacks.*
-You can ping me @ <0isujith0@gmail.com>
-<br>
-# Snapshots
+- *Added Cart, Personal Profile, Product Review and My Orders features.*
+- *Implemented Search with Concepts like **Debouncing**, **Caching**.*
+- *Added Sign-in and Sign-up page for user authentication.*
+
+## Snapshots
 <br>
 <img width="960" alt="image" src="https://github.com/5ujith/CartX-Frontend/assets/75260608/a8d9d76d-4339-4f7a-ae79-97eab1961da4">
 <br>
@@ -19,6 +19,8 @@ You can ping me @ <0isujith0@gmail.com>
 <img width="960" alt="image" src="https://github.com/5ujith/CartX-Frontend/assets/75260608/880b375a-37d8-4ea6-b950-77a1519bcb7d">
 <br>
 <img width="960" alt="image" src="https://github.com/5ujith/CartX-Frontend/assets/75260608/d1eb7598-1ba2-4570-b1db-4caa9cb7fd03">
+<br>
+<img width="949" alt="image" src="https://github.com/5ujith/CartX-Frontend/assets/75260608/5dba9ced-b3ea-44c9-91a3-f6a4501d064c">
 <br>
 <img width="960" alt="image" src="https://github.com/5ujith/CartX-Frontend/assets/75260608/442713c0-2e3e-43d0-a617-271f835025fb">
 <br>
