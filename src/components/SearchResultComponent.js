@@ -2,14 +2,26 @@ import axios from "axios";
 import { useEffect, useState } from "react";
 import { BACKEND_BASE_URL } from "../utils/constants";
 import { Link } from "react-router-dom";
+import { useDispatch, useSelector } from "react-redux";
+import { addSearchResult } from "../utils/searchSlice";
+import store from "../utils/store";
 
 const SearchResultComponent = () => {
     const [searchItems, setSearchItems] = useState([]);
     const [searchInput, setSearchInput] = useState('');
     const [isFocused, setIsFocused] = useState(false);
+    const dispatch = useDispatch();
+    const searchResult = useSelector(store => store.search);
 
     useEffect(() => {
-        const getData = setTimeout(getSearchResults, 500);
+        const getData = setTimeout(() => {
+            if(searchResult[searchInput]) {
+                setSearchItems(searchResult[searchInput]);
+            }
+            else {
+                getSearchResults();
+            }
+        }, 500);
         return () => clearTimeout(getData);
     }, [searchInput])
     
@@ -28,6 +40,9 @@ const SearchResultComponent = () => {
                 url: `${BACKEND_BASE_URL}/productsByName?productName=${searchInput}`,
             })
             setSearchItems(response?.data?.data);
+            dispatch(addSearchResult({
+                [searchInput] : response?.data?.data,
+            }));
         }
         catch(error) {
             console.log(error);
