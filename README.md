@@ -1,5 +1,5 @@
 # CartX
-- *This is a E-Commerce website built using **ReactJS**, **TailwindCSS**, **NodeJS** and **MySQL**.*
+- *This is an E-Commerce website built using **ReactJS**, **TailwindCSS**, **NodeJS** and **MySQL**.*
 - *Added Cart, Personal Profile, Product Review and My Orders features.*
 - *Implemented Search with Concepts like **Debouncing**, **Caching**.*
 - *Added Sign-in and Sign-up page for user authentication.*
